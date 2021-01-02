@@ -1,4 +1,4 @@
-# JavaNote
+# Data Structure Note for java and python
 This is note for basic java data structure usages, which includes:
 Array
 List (LinkedList, Arraylist)
