@@ -157,6 +157,26 @@ public class solution {
     List<Integer> list = new ArrayList<>();
     // Add something in the list, then 
     PriorityQueue<Integer> q = new PriorityQueue<>(list);
+    // Add hashMap entry set into heap
+    q.addAll(map.entrySet());
+
+    // ===========>
+        Map<String, Integer> map = new HashMap<>();
+        
+        for (String word: words) {
+            map.put(word, map.getOrDefault(word, 0) + 1);
+        }
+
+        PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<>((a, b) -> {
+            if (b.getValue() == a.getValue()) {
+                return a.getKey().compareTo(b.getKey());
+            }
+            else {
+                return b.getValue() - a.getValue();
+            }
+        } 
+        pq.addAll(map.entrySet());
+       // <================
 
     // Insert
     boolean x = q.offer(x);
