@@ -149,14 +149,14 @@ public class solution {
     Set<Ineger> set = new TreeSet<>();
     Integer val = set.ceiling(x); // find the least number >= x
     // Heap
-    Queue<Integer> q = new PriorityQueue<>();
-    Queue<Integer> q = new PriorityQueue<>((a, b) -> a - b);
-    Queue<Integer> q = new PriorityQueue<>(Colletions.reverseOrder());
+    PriorityQueue<Integer> q = new PriorityQueue<>();
+    PriorityQueue<Integer> q = new PriorityQueue<>((a, b) -> a - b);
+    PriorityQueue<Integer> q = new PriorityQueue<>(Colletions.reverseOrder());
 
     // Create heap from a list
     List<Integer> list = new ArrayList<>();
     // Add something in the list, then 
-    Queue<Integer> q = new PriorityQueue<>(list);
+    PriorityQueue<Integer> q = new PriorityQueue<>(list);
 
     // Insert
     boolean x = q.offer(x);
