@@ -70,7 +70,7 @@ public class solution {
     // Deque
     Deque<Integer> deque = new LinkedList<>(); 
     
-    deque.offerFirts(1);
+    deque.offerFirst(1);
     int first = deque.peekFirst();
     int last = deque.pollLast();
     int cur = deque.peekLast();
