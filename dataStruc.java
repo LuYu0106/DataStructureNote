@@ -21,8 +21,11 @@ public class solution {
     });
 
     List<String> stringList = new ArrayList<>();
-    // Add some strings then
+    // Add some strings then 
+    // convert to a stirng, remember, here we have a list not an array
     String message = String.join("", stringList);
+    // if we have a char[] array 
+    String message = new String(array);
 
     // 2-d Array
     int[][] a2 = new int[m][n];
@@ -112,7 +115,7 @@ public class solution {
     
     
     HashMap Map<Integer, Set<Integer>> map = new HashMap<>();
-    map.computeIfAbsent(1, new HashSet<>());
+    map.computeIfAbsent(1, k -> new HashSet<>());
     map.get(1).add(2);
 
     // Convert map value to List
