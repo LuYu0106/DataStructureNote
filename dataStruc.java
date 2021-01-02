@@ -6,13 +6,13 @@ public class solution {
     int[] a = new int[n];
     Arrays.fill(a, 1);
     
-    // increasing sort
+    // Increasing sort
     Arrays.sort(a);
-    // decresing sort, lambda expression 
+    // Decresing sort, lambda expression 
     Arrays.sort(a, (x1, x2) -> (x2 - x1));
     
     Point[] points = new Point[5];
-    // filling something then, implement comparator for sort 
+    // Filling something then, implement comparator for sort 
     Arrays.sort(points, new Comparator<Point>(){
         @Orverride
         public int compare(Point p1, Point p2) {
@@ -21,7 +21,7 @@ public class solution {
     });
 
     List<String> stringList = new ArrayList<>();
-    // add some strings then
+    // Add some strings then
     String message = String.join("", stringList);
 
     // 2-d Array
@@ -38,15 +38,15 @@ public class solution {
         }
     }
     // List
-    //  ArrayList
+    // ArrayList
     List<Integer> arrayList  = new ArrayList<>();
     List<Integer> arrayList  = new ArrayList<>(Arrays.asList(1, 2, 3));
     
-    // insert
+    // Insert
     arrayList.add(1);
-    // remove 
+    // Remove 
     arrayList.remove(arrayList.size() - 1);
-    // access 
+    // Access 
     arrayList.get(index);
 
     // LinkedList 
@@ -55,15 +55,14 @@ public class solution {
     // Stack
     Stack<Integer> stack = new Stack<>(); 
     boolean e = stack.isEmpty();
-    // top elememt
+    // Top elememt
     Integer top = stack.peek();
     
-    // remove the top elememt
+    // Remove the top elememt
     Integer last = stack.pop();
 
-    // add
+    // Add
     stack.push(1); 
-
 
     // Deque
     Deque<Integer> deque = new LinkedList<>(); 
@@ -77,31 +76,31 @@ public class solution {
     Queue<Integer> q = new LinkedList<>();
     Queue<Integer> q = new ArrayDeque<>();
 
-    // insert
+    // Insert
     boolean x = q.offer(x);
-    // peek 
+    // Peek 
     int x = q.peek();
-    // pop
+    // Pop
     int p = q.poll();
      
     // Trie tree 
     
     // HashMao 
-    // create 
+    // Create 
     HashMap Map<Integer, Integer> map = new HashMap<>();
     
-    // insert
+    // Insert
     map.put(key, value);
     map.put(1, 3);
 
-    // get
+    // Get
     int value = map.get(key);
     int value = map.getOrDefault(key);
 
-    // check contains
+    // Check contains
     map.contains(key);
 
-    // iterate
+    // Iterate
     for (Integer key : map.keySet()){
         Intgeter value = map.get(key);
     }
@@ -116,7 +115,7 @@ public class solution {
     map.computeIfAbsent(1, new HashSet<>());
     map.get(1).add(2);
 
-    // convert map value to List
+    // Convert map value to List
     //  Example ===========>
      Map<Integer, Set<Integer>> map = new HashMap<>();
         for (int i = 0; i < 4; i++) {
@@ -154,37 +153,37 @@ public class solution {
     Queue<Integer> q = new PriorityQueue<>((a, b) -> a - b);
     Queue<Integer> q = new PriorityQueue<>(Colletions.reverseOrder());
 
-    // create heap from a list
+    // Create heap from a list
     List<Integer> list = new ArrayList<>();
-    // add something in the list, then 
+    // Add something in the list, then 
     Queue<Integer> q = new PriorityQueue<>(list);
 
-    // insert
+    // Insert
     boolean x = q.offer(x);
-    // peek 
+    // Peek 
     int x = q.peek();
-    // pop
+    // Pop
     int p = q.poll();
 
     // Uinon find  
     // String
     String string = "Ellie is smart!";
-    // first index of e
+    // First index of e
     int firstIndex = string.indexOf('e');
-    // len
+    // Len
     int len = string.length();
-    // to char[]
+    // To char[]
     char[] charArray = string.toCharArray();
-    // remove head and tail space
+    // Remove head and tail space
     string.trim();
 
-    // check if two strings are the same
+    // Check if two strings are the same
     string.equal(str2);
 
-    // split
+    // Split
     String[] stringArray = string.split(" ");
 
-    // substring index1: inclusive, index2: not inclusive
+    // Substring index1: inclusive, index2: not inclusive
     String sub = string.substring(index1, index2);
 
     }
@@ -192,9 +191,9 @@ public class solution {
 
     String s = 1 + "024";
     s.startWith(word, i);
-    // string to Integer
+    // String to Integer
     Integer res = Integer.valueOf(s);
-    // string to char array
+    // String to char array
     char[] charArray = s.toCharArray();
 
 }
