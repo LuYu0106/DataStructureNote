@@ -177,7 +177,7 @@ public class solution {
             else {
                 return b.getValue() - a.getValue();
             }
-        } 
+        }); 
         pq.addAll(map.entrySet());
        // <================
 
