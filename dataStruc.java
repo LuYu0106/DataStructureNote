@@ -53,7 +53,7 @@ public class solution {
     arrayList.get(index);
 
     // LinkedList 
-    LinkedList List<Integer> linkedList = new LinkedList<>(); 
+    List<Integer> linkedList = new LinkedList<>(); 
 
     // Stack
     Stack<Integer> stack = new Stack<>(); 
@@ -90,7 +90,7 @@ public class solution {
     
     // HashMao 
     // Create 
-    HashMap Map<Integer, Integer> map = new HashMap<>();
+    HashMMap<Integer, Integer> map = new HashMap<>();
     
     // Insert
     map.put(key, value);
@@ -114,7 +114,7 @@ public class solution {
     }
     
     
-    HashMap Map<Integer, Set<Integer>> map = new HashMap<>();
+    Map<Integer, Set<Integer>> map = new HashMap<>();
     map.computeIfAbsent(1, k -> new HashSet<>());
     map.get(1).add(2);
 
@@ -138,7 +138,7 @@ public class solution {
     return new ArrayList<Set<Integer>>(map.values());
 
     // HashSet
-    hashSet Set<Integer> set = new HashSet<>();
+    Set<Integer> set = new HashSet<>();
     // TreeMap
     Map<Integer, Integer> maps = new TreeMap<>();
     //      lower  floor   ceiling higher 
