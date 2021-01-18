@@ -197,9 +197,9 @@
 
     String s = 1 + "024";
     s.startWith(word, i);
-    # String to Integer
-    Integer res = Integer.valueOf(s);
-    # String to char array
-    char[] charArray = s.toCharArray();
+    
+    # random: looking for a int which is >= 1 and <= 10, inclusive two sides
+    x = random.randint(1, 10)
 
+    
 }
